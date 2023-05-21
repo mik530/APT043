@@ -1,0 +1,56 @@
+<!--<!doctype html>
+<head>
+    this is a letter for our end
+    this year we graduction,three years close
+</head>
+<a>hello here is Mik530's website</a>
+<p>this is my project</p>
+<body>
+<iframe frameborder="0" scrolling="no" src="index2.html" width="100%" height="500px">
+
+</iframe>
+</body>
+
+<script src="js/prefixfree.min.js"></script>
+-->
+<!---->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dust Cloud Effect</title>
+	<style>
+		body {
+			background-color: #000;
+		}
+		.particle {
+			position: absolute;
+			background-color: #fff;
+			border-radius: 50%;
+			animation: dust 2s ease-out infinite;
+		}
+		@keyframes dust {
+			0% {
+				transform: scale(0);
+				opacity: 1;
+			}
+			100% {
+				transform: scale(1);
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<script>
+		for (var i = 0; i < 50; i++) {
+			var particle = document.createElement("div");
+			particle.className = "particle";
+			particle.style.top = Math.random() * 100 + "%";
+			particle.style.left = Math.random() * 100 + "%";
+			particle.style.width = Math.random() * 10 + "px";
+			particle.style.height = particle.style.width;
+			document.body.appendChild(particle);
+		}
+	</script>
+</body>
+</html>
